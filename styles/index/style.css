@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -9,38 +11,41 @@ body {
   font-family: "Dancing Script";
 }
 
-section.all {
+div.all {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(138, 255, 163);
+  background-color: #008fff;
+  background-image: linear-gradient(90deg, #008fff 0%, #014fd6 51%, #01429a 100%);
+  color: white;
   padding: 0.25rem 0;
 }
-section.all header.cabecario-site {
+div.all header.cabecario-site {
   padding: 5px;
 }
-section.all header.cabecario-site h1.logo {
+div.all header.cabecario-site h1.logo {
   margin-left: 0.5rem;
 }
-section.all header.cabecario-site button.botao-estilo {
+div.all header.cabecario-site button.botao-estilo {
   display: none;
 }
-section.all nav.cabecario-links {
+div.all nav.cabecario-links {
   display: flex;
 }
-section.all nav.cabecario-links ul.links-cabecario {
+div.all nav.cabecario-links ul.links-cabecario {
   display: flex;
   list-style: none;
 }
-section.all nav.cabecario-links ul.links-cabecario li.links {
+div.all nav.cabecario-links ul.links-cabecario li.links {
   padding: 1rem;
 }
-section.all nav.cabecario-links ul.links-cabecario li.links a {
+div.all nav.cabecario-links ul.links-cabecario li.links a {
   text-decoration: none;
-  color: black;
+  font-family: "Ubuntu";
+  color: white;
 }
-section.all nav.cabecario-links ul.links-cabecario li.links:hover {
-  background-color: white;
+div.all nav.cabecario-links ul.links-cabecario li.links:hover {
+  background-color: rgb(0, 0, 0);
 }
 
 @media screen and (max-width: 500px) {
@@ -64,6 +69,7 @@ section.all nav.cabecario-links ul.links-cabecario li.links:hover {
     padding: 0.5rem;
   }
   section.all nav.cabecario-links {
+    display: none;
     width: 100%;
   }
   section.all nav.cabecario-links ul.links-cabecario {
@@ -76,4 +82,9 @@ section.all nav.cabecario-links ul.links-cabecario li.links:hover {
     width: 100%;
     text-align: center;
   }
+}
+main.conteudo-principal {
+  background-color: #008fff;
+  background-image: linear-gradient(90deg, #008fff 0%, #0041b5 51%, #003784 100%);
+  height: 100vh;
 }/*# sourceMappingURL=style.css.map */
