@@ -1,0 +1,30 @@
+@import '../../abstract/variables';
+
+header.cabecario-site{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $cor-principal;
+    
+    h1.logo{
+        margin-left:.5rem;
+    }
+    
+    ul.links-cabecario{
+        display:flex;
+        list-style:none;
+
+        li.links{
+            padding:1rem;
+
+            a{
+                text-decoration: none;
+                color:black;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+}

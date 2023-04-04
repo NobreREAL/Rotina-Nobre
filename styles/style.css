@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Dancing Script";
+}
+
+header.cabecario-site {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(138, 255, 163);
+}
+header.cabecario-site h1.logo {
+  margin-left: 0.5rem;
+}
+header.cabecario-site ul.links-cabecario {
+  display: flex;
+  list-style: none;
+}
+header.cabecario-site ul.links-cabecario li.links {
+  padding: 1rem;
+}
+header.cabecario-site ul.links-cabecario li.links a {
+  text-decoration: none;
+  color: black;
+}/*# sourceMappingURL=style.css.map */
