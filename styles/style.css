@@ -9,23 +9,67 @@ body {
   font-family: "Dancing Script";
 }
 
-header.cabecario-site {
+section.all {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: rgb(138, 255, 163);
+  padding: 0.25rem 0;
 }
-header.cabecario-site h1.logo {
+section.all header.cabecario-site {
+  padding: 5px;
+}
+section.all header.cabecario-site h1.logo {
   margin-left: 0.5rem;
 }
-header.cabecario-site ul.links-cabecario {
+section.all nav.cabecario-links {
+  display: flex;
+}
+section.all nav.cabecario-links ul.links-cabecario {
   display: flex;
   list-style: none;
 }
-header.cabecario-site ul.links-cabecario li.links {
+section.all nav.cabecario-links ul.links-cabecario li.links {
   padding: 1rem;
 }
-header.cabecario-site ul.links-cabecario li.links a {
+section.all nav.cabecario-links ul.links-cabecario li.links a {
   text-decoration: none;
   color: black;
+}
+section.all nav.cabecario-links ul.links-cabecario li.links:hover {
+  background-color: white;
+}
+
+@media screen and (max-width: 500px) {
+  section.all {
+    flex-flow: column nowrap;
+  }
+  section.all header.cabecario-site {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 96%;
+    gap: 1rem;
+  }
+  section.all header.cabecario-site button.botao-estilo {
+    background: transparent;
+    border: none;
+    font-size: 30px;
+  }
+  section.all header.cabecario-site h1.logo {
+    padding: 0.5rem;
+  }
+  section.all nav.cabecario-links {
+    width: 100%;
+  }
+  section.all nav.cabecario-links ul.links-cabecario {
+    flex-flow: column nowrap;
+    width: 100%;
+    align-items: center;
+  }
+  section.all nav.cabecario-links ul.links-cabecario li:hover {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */

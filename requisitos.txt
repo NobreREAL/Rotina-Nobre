@@ -1,0 +1,1 @@
+Para o banco de dados, devo saber POO em Javascript

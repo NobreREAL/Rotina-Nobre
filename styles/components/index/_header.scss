@@ -1,30 +1,81 @@
 @import '../../abstract/variables';
 
-header.cabecario-site{
+
+section.all{
     display:flex;
     align-items: center;
     justify-content: space-between;
     background-color: $cor-principal;
-    
-    h1.logo{
-        margin-left:.5rem;
+    padding: .25rem 0;
+
+    header.cabecario-site{
+        padding:5px;
+        
+        h1.logo{
+            margin-left:.5rem;
+        }
     }
-    
-    ul.links-cabecario{
+
+    nav.cabecario-links{
         display:flex;
-        list-style:none;
+        ul.links-cabecario{
+            display:flex;
+            list-style:none;
 
-        li.links{
-            padding:1rem;
+            li.links{
+                padding:1rem;
 
-            a{
-                text-decoration: none;
-                color:black;
+                a{
+                    text-decoration: none;
+                    color:black;
+                }
+
+                &:hover{
+                    background-color: white;
+
+                }
             }
         }
     }
-}
+    }
 
 @media screen and (max-width: 500px) {
 
+    section.all{
+        flex-flow:column nowrap;
+
+        header.cabecario-site{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width:96%;
+            gap:1rem;
+
+            button.botao-estilo{
+                background:transparent;
+                border:none;
+                font-size:30px;
+            }
+
+            h1.logo{
+                padding:.5rem;
+            }
+        }
+
+        nav.cabecario-links{
+            
+            width:100%;
+            ul.links-cabecario{
+                flex-flow:column nowrap;
+                width:100%;
+                align-items: center;
+                li:hover{
+                    background-color: white;
+                    width:100%;
+                    text-align: center;
+                }
+            }
+
+    }
+    }
 }
