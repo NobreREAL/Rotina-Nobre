@@ -6,8 +6,3 @@ export function menuBarFunction(menuResponsivo)
         menuResponsivo.style.display = "none";
     }
 }
-
-export function removerBotao(botao)
-{
-    botao.remove();
-}

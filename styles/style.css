@@ -22,6 +22,9 @@ section.all header.cabecario-site {
 section.all header.cabecario-site h1.logo {
   margin-left: 0.5rem;
 }
+section.all header.cabecario-site button.botao-estilo {
+  display: none;
+}
 section.all nav.cabecario-links {
   display: flex;
 }
@@ -52,6 +55,7 @@ section.all nav.cabecario-links ul.links-cabecario li.links:hover {
     gap: 1rem;
   }
   section.all header.cabecario-site button.botao-estilo {
+    display: block;
     background: transparent;
     border: none;
     font-size: 30px;
