@@ -1,6 +1,59 @@
+@import '../../abstract/variables';
+
 main.conteudo-principal{
     background-color: #008fff;
     background-image: linear-gradient(90deg, #008fff 0%, #0041b5 51%, #003784 100%);
     height:100vh;
+    display:flex;
+    padding:0 5rem;
+    align-items: center;
+    justify-content: center;
+    font-family:$fonte-links;
+
+    div.tela-informacoes{
+        display:flex;
+        width:50%;
+        flex-flow:column nowrap;
+        gap:1.5rem;
+
+        h1.titulo-conteudo{
+            width:100%;
+            font-size:2.5rem;
+            color:white;
+            line-height:4rem;            
+            span.destaque-titulo{
+                color:#000000;
+            }
+        }
+
+        p.frase-conteudo{
+            font-size:1.2rem;
+            font-weight:600;
+        }
+
+        a.botao-advise{
+            background-color: rgb(37, 49, 214);
+            width:250px;
+            height:50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration:none;
+            font-family:$fonte-links;
+            color: white;
+            font-size:1.25rem;
+            font-weight:600;
+            border-radius:15px;
+
+            &:hover{
+                background-color: rgb(71, 80, 216);
+            }
+        }
+    }
+
+    img.imagem-informacao{
+        width: 50%;
+        object-fit:contain;
+    }
 
 }

@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -91,4 +93,50 @@ main.conteudo-principal {
   background-color: #008fff;
   background-image: linear-gradient(90deg, #008fff 0%, #0041b5 51%, #003784 100%);
   height: 100vh;
+  display: flex;
+  padding: 0 5rem;
+  align-items: center;
+  justify-content: center;
+  font-family: "Ubuntu";
+}
+main.conteudo-principal div.tela-informacoes {
+  display: flex;
+  width: 50%;
+  flex-flow: column nowrap;
+  gap: 1.5rem;
+}
+main.conteudo-principal div.tela-informacoes h1.titulo-conteudo {
+  width: 100%;
+  font-size: 2.5rem;
+  color: white;
+  line-height: 4rem;
+}
+main.conteudo-principal div.tela-informacoes h1.titulo-conteudo span.destaque-titulo {
+  color: #000000;
+}
+main.conteudo-principal div.tela-informacoes p.frase-conteudo {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+main.conteudo-principal div.tela-informacoes a.botao-advise {
+  background-color: rgb(37, 49, 214);
+  width: 250px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Ubuntu";
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 15px;
+}
+main.conteudo-principal div.tela-informacoes a.botao-advise:hover {
+  background-color: rgb(71, 80, 216);
+}
+main.conteudo-principal img.imagem-informacao {
+  width: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=style.css.map */
