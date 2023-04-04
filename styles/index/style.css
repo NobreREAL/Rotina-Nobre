@@ -49,35 +49,36 @@ div.all nav.cabecario-links ul.links-cabecario li.links:hover {
 }
 
 @media screen and (max-width: 500px) {
-  section.all {
+  div.all {
     flex-flow: column nowrap;
   }
-  section.all header.cabecario-site {
+  div.all header.cabecario-site {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 96%;
     gap: 1rem;
   }
-  section.all header.cabecario-site button.botao-estilo {
+  div.all header.cabecario-site button.botao-estilo {
     display: block;
     background: transparent;
     border: none;
     font-size: 30px;
+    color: white;
   }
-  section.all header.cabecario-site h1.logo {
+  div.all header.cabecario-site h1.logo {
     padding: 0.5rem;
   }
-  section.all nav.cabecario-links {
+  div.all nav.cabecario-links {
     display: none;
     width: 100%;
   }
-  section.all nav.cabecario-links ul.links-cabecario {
+  div.all nav.cabecario-links ul.links-cabecario {
     flex-flow: column nowrap;
     width: 100%;
     align-items: center;
   }
-  section.all nav.cabecario-links ul.links-cabecario li:hover {
+  div.all nav.cabecario-links ul.links-cabecario li:hover {
     background-color: white;
     width: 100%;
     text-align: center;

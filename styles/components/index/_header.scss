@@ -50,7 +50,7 @@ div.all{
 
 @media screen and (max-width: 500px) {
 
-    section.all{
+    div.all{
         flex-flow:column nowrap;
 
         header.cabecario-site{
@@ -65,6 +65,7 @@ div.all{
                 background:transparent;
                 border:none;
                 font-size:30px;
+                color:white;
             }
 
             h1.logo{
