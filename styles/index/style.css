@@ -26,6 +26,9 @@ div.all header.cabecario-site {
 div.all header.cabecario-site h1.logo {
   margin-left: 0.5rem;
 }
+div.all header.cabecario-site h1.logo img.imagem-logo {
+  width: 30px;
+}
 div.all header.cabecario-site button.botao-estilo {
   display: none;
 }
