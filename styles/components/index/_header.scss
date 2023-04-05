@@ -14,12 +14,18 @@ div.all{
 
     header.cabecario-site{
         padding:5px;
-        
+        display:flex;
+        align-items: center;
+
         h1.logo{
             margin-left:.5rem;
+            font-family:$fonte-logo;
 
             img.imagem-logo{
-                width:30px;
+                width:50px;
+                position:absolute;
+                top:12px;
+                object-fit: cover;
             }
         }
 
@@ -52,7 +58,7 @@ div.all{
     }
     }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 570px) {
 
     div.all{
         flex-flow:column nowrap;
@@ -74,6 +80,13 @@ div.all{
 
             h1.logo{
                 padding:.5rem;
+
+                img.imagem-logo{
+                    width:50px;
+                    position:absolute;
+                    top:20px;
+                    object-fit: cover;
+                }
             }
         }
 
