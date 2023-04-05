@@ -1,8 +1,20 @@
-<h1> Website NobreMind </h1>
+<h1> Website Rotina Nobre </h1>
 
-> Status do projeto: Em planejamento (reunindo requisitos).
+> Status do projeto:
+Em planejamento (reunindo requisitos).
+Atualmente, LandingPage está sendo aprimorada em seus design e futuramente, terá as devidas implementações.
 
-<h2> Objetivo com o projeto: NobreMind </h2>
+<h2> Roadmap do trabalho </h2>
+
+<ol>
+<li> Criar a LandingPage ✅ </li>
+<li> Desenvolver aplicação: Janela de cadastro ❌ </li>
+<li> Desenvolver aplicação: Janela de criação de atividades ❌ </li>
+<li> Desenvolver aplicação: Janela de Relatório ❌ </li>
+</ol>
+
+
+<h2> Objetivo com o projeto: Rotina Nobre </h2>
 
 <p> Estou desenvolvendo esse projeto com o intuito de aprimorar e conhecer mais sobre a capacidade do JavaScript, React, SCSS e boas práticas de desenvolvimento. </p>
 <p> Esse será meu primeiro projeto utilizando React.
