@@ -7,6 +7,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -209,4 +212,36 @@ main.conteudo-principal img.imagem-informacao {
     -o-object-fit: contain;
        object-fit: contain;
   }
+}
+footer.rodape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #008fff;
+  background-image: linear-gradient(90deg, #008fff 0%, #0041b5 51%, #003784 100%);
+  height: 15vh;
+}
+footer.rodape ul.lista-rodape {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+footer.rodape ul.lista-rodape li.lista-conteudo {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  padding: 0.9rem;
+}
+footer.rodape ul.lista-rodape li.lista-conteudo img.imagem-lista {
+  width: 50px;
+}
+footer.rodape ul.lista-rodape li.lista-conteudo a.nome-conteudo {
+  font-family: "Ubuntu";
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+footer.rodape ul.lista-rodape li.lista-conteudo a.nome-conteudo:hover {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
