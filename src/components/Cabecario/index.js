@@ -1,4 +1,3 @@
-import './Header.css'
 import Logo from '../LogoImagem'
 import Navegacao from '../Navegacao'
 
