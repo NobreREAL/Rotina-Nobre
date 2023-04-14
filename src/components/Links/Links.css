@@ -1,0 +1,8 @@
+li.links{
+    list-style:none;
+    padding:1rem;
+}
+
+li.links:last-child a{
+    font-weight:600;
+}

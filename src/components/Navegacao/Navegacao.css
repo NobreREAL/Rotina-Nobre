@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+:root{
+    --fontePrincipal: "Ubuntu";
+}
+
+header.main-header nav{
+    display:flex;
+}
+
+header.main-header nav ul{
+    display:flex;
+}
+
+header.main-header nav ul li.links{
+    padding:1rem;
+}
+
+header.main-header nav ul li a{
+    text-decoration: none;
+    font-family: var(--fontePrincipal);
+    color:white;
+}
+
+header.main-header nav ul li a:hover{
+    color: rgb(209, 209, 209);
+}
