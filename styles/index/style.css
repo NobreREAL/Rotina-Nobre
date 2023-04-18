@@ -66,7 +66,7 @@ div.all nav.cabecario-links ul.links-cabecario li.links:hover {
   background-color: rgb(0, 0, 0);
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 635px) {
   div.all {
     flex-flow: column nowrap;
   }
