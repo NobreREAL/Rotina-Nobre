@@ -10,6 +10,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -36,6 +39,7 @@ div.all header.cabecario-site {
 div.all header.cabecario-site h1.logo {
   margin-left: 0.5rem;
   font-family: "Roboto Slab";
+  cursor: pointer;
 }
 div.all header.cabecario-site h1.logo img.imagem-logo {
   width: 50px;
@@ -244,4 +248,76 @@ footer.rodape ul.lista-rodape li.lista-conteudo a.nome-conteudo {
 }
 footer.rodape ul.lista-rodape li.lista-conteudo a.nome-conteudo:hover {
   color: white;
+}
+
+.formulario {
+  width: 400px;
+  min-height: 75vh;
+  background: rgba(0, 0, 0, 0.5333333333);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: white;
+  gap: 2rem;
+}
+.formulario h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}
+.formulario .container-form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+.formulario .container-form label {
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  gap: 1rem;
+}
+.formulario .container-form label img {
+  width: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.formulario .container-form input {
+  padding: 1rem;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  font-size: 1.25rem;
+  color: white;
+  width: 375px;
+}
+.formulario .container-form input:active, .formulario .container-form input:focus {
+  background-color: none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+}
+.formulario .submit {
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  width: 150px;
+  transition: border-radius 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.formulario .submit:hover {
+  border-radius: 1rem;
+  color: rgb(72, 167, 255);
+  transition: border-radius 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.formulario .submit:active {
+  color: red;
 }/*# sourceMappingURL=style.css.map */

@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Rotina Nobre</title>
-    <link rel="stylesheet" href="../styles/index/style.css">
+    <link rel="stylesheet" href="../styles/main/style.css">
     <link rel="shortcut icon" type="image/png" href="../styles/index/ico/favicon.png">
 </head>
 <body>
     <div class="all">
         <header class="cabecario-site">
-            <h1 class="logo">Rotina Nobre <img src="../styles/index/imgs/logo.png" alt="Logo LN referente as iniciais do criador" class="imagem-logo"></h1>
+            <h1 class="logo">Rotina Nobre <img src="../styles/main/imgs/logo.png" alt="Logo LN referente as iniciais do criador" class="imagem-logo"></h1>
             <button class="botao-estilo">-</button>
         </header>
         <nav class="cabecario-links">
@@ -30,12 +30,20 @@
     </div>
 
     <main class="conteudo-principal">
-        <form action="">
-            <label for="username" class="label-input">Usuário:</label>
-            <input type="text" name="username" id="username" class="textbox">
-            <label for="password" class="label-input">Senha:</label>
-            <input type="password" name="password" id="password" class="textbox">
+        <form action="" class="formulario">
+            <h2 class="login">Login</h2>
+            <div class="container-form">
+                <label for="username" class="label-input"><img src="../styles/main/ico/username.png" alt="logo-username">Usuário</label>
+                <input type="text" name="username" id="username" class="textbox" autocomplete="off" maxlength="15">
+            </div>
+            <div class="container-form">
+                <label for="password" class="label-input"><img src="../styles/main/ico/password.png" alt="logo-password">Senha</label>
+                <input type="password" name="password" id="password" class="textbox">
+            </div>
+
+            <input type="submit" value="Login" class="submit">
         </form>
     </main>
+    <script type="module" src="../scripts/index/main.js"></script>
 </body>
 </html>

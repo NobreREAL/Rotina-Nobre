@@ -1,11 +1,17 @@
 
-import { menuBarFunction } from './functions.js';
+import { menuBarFunction, callBackForlandingPage } from './functions.js';
 
 const botaoControle = document.querySelector(".botao-estilo");
 const displayMenu = document.querySelector(".cabecario-links");
+const logoImg = document.querySelector(".logo");
+
 
 botaoControle.addEventListener('click', () => {
     menuBarFunction(displayMenu);
+})
+
+logoImg.addEventListener('click', () => {
+    callBackForlandingPage();
 })
 
 window.addEventListener('resize', () => {
@@ -14,3 +20,4 @@ window.addEventListener('resize', () => {
         displayMenu.style.display = "flex";
     }
 })
+
