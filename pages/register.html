@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Rotina Nobre</title>
+    <title>Cadastro Rotina Nobre</title>
     <link rel="stylesheet" href="../styles/main/style.css">
     <link rel="shortcut icon" type="image/png" href="../styles/index/ico/favicon.png">
 </head>
@@ -20,28 +20,29 @@
                     <a href="#" target="_self" rel="noopener noreferrer">Sobre Nós</a>
                 </li>
                 <li class="links">
-                    <a href="register.html" target="_self" rel="noopener noreferrer">Cadastro</a>
+                    <a href="#" target="_self" rel="noopener noreferrer">Descubra</a>
                 </li>
                 <li class="links">
-                    <a href="#" target="_self" rel="noopener noreferrer">Descubra</a>
+                    <a href="login.html" target="_self" rel="noopener noreferrer"><strong>Entrar</strong></a>
                 </li>
             </ul>
         </nav>
     </div>
 
     <main class="conteudo-principal">
-        <form action="" class="formulario">
-            <h2 class="login">Login</h2>
-            <div class="container-form">
-                <label for="username" class="label-input"><img src="../styles/main/ico/username.png" alt="logo-username">Usuário</label>
-                <input type="text" name="username" id="username" class="textbox" autocomplete="off" maxlength="15" required>
-            </div>
-            <div class="container-form">
-                <label for="password" class="label-input"><img src="../styles/main/ico/password.png" alt="logo-password">Senha</label>
-                <input type="password" name="password" id="password" class="textbox" required>
-            </div>
-            <input type="submit" value="Login" class="submit">
+        <form action="" class="cadastro">
+            <h1 id="conteudo-titulo">Cadastrar conta</h1>
+            <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" class="inputBar" autocomplete="off" maxlength="15" required>            
+            <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="inputBar" autocomplete="off" maxlength="24" required>
+            <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" class="inputBar" required>            
+            <label for="confirmSenha">Confirma Senha</label>
+                <input type="password" name="confirmSenha" id="confirmSenha" class="inputBar" required>
+                <input type="submit" value="Cadastrar" class="submitInput">
         </form>
+ 
     </main>
     <script type="module" src="../scripts/index/main.js"></script>
 </body>

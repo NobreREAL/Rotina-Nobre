@@ -13,6 +13,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -320,4 +323,68 @@ footer.rodape ul.lista-rodape li.lista-conteudo a.nome-conteudo:hover {
 }
 .formulario .submit:active {
   color: red;
+}
+
+@media screen and (max-width: 450px) {
+  .formulario {
+    width: 300px;
+  }
+  .formulario .container-form input {
+    width: 275px;
+  }
+}
+.cadastro {
+  width: 50%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.536);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 1rem;
+}
+.cadastro #conteudo-titulo {
+  position: absolute;
+  top: 100px;
+}
+.cadastro label {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+.cadastro .inputBar {
+  width: 450px;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  background-color: transparent;
+  font-size: 24px;
+  color: white;
+}
+.cadastro .inputBar:active, .cadastro .inputBar:focus {
+  background-color: none;
+  border: none;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  outline: none;
+}
+.cadastro .submitInput {
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 15px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-radius 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.cadastro .submitInput:hover {
+  border-radius: 1rem;
+  color: rgb(72, 167, 255);
+  transition: border-radius 0.5s ease-in-out, color 0.5s ease-in-out;
 }/*# sourceMappingURL=style.css.map */
