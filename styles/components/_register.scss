@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     color:white;
-    gap:1rem;
+    gap:2rem;
     #conteudo-titulo{
         position:absolute;
         top:100px;
@@ -19,8 +19,7 @@
         
         display:flex;
         align-items: center;
-        gap:2rem;
-        margin:1rem 0;
+        gap:1rem;
         font-size:2rem;
 
     }
@@ -30,7 +29,7 @@
         border:none;
         border-bottom:2px solid rgb(255, 255, 255);
         background-color:transparent;
-        font-size:24px;
+        font-size:24rem;
         color:white;
 
         &:active, &:focus{
@@ -49,7 +48,6 @@
         color:white;
         font-weight:600;
         font-size:16px;
-        margin-top:15px;
         background-color: transparent;
         cursor:pointer;
         transition:border-radius .5s ease-in-out, color .5s ease-in-out;

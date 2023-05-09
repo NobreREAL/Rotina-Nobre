@@ -342,7 +342,7 @@ footer.rodape ul.lista-rodape li.lista-conteudo a.nome-conteudo:hover {
   justify-content: center;
   align-items: center;
   color: white;
-  gap: 1rem;
+  gap: 2rem;
 }
 .cadastro #conteudo-titulo {
   position: absolute;
@@ -351,8 +351,7 @@ footer.rodape ul.lista-rodape li.lista-conteudo a.nome-conteudo:hover {
 .cadastro label {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  margin: 1rem 0;
+  gap: 1rem;
   font-size: 2rem;
 }
 .cadastro .inputBar {
@@ -361,7 +360,7 @@ footer.rodape ul.lista-rodape li.lista-conteudo a.nome-conteudo:hover {
   border: none;
   border-bottom: 2px solid rgb(255, 255, 255);
   background-color: transparent;
-  font-size: 24px;
+  font-size: 24rem;
   color: white;
 }
 .cadastro .inputBar:active, .cadastro .inputBar:focus {
@@ -378,7 +377,6 @@ footer.rodape ul.lista-rodape li.lista-conteudo a.nome-conteudo:hover {
   color: white;
   font-weight: 600;
   font-size: 16px;
-  margin-top: 15px;
   background-color: transparent;
   cursor: pointer;
   transition: border-radius 0.5s ease-in-out, color 0.5s ease-in-out;
