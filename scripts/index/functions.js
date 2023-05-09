@@ -6,12 +6,3 @@ export function menuBarFunction(menuResponsivo)
         menuResponsivo.style.display = "none";
     }
 }
-
-export function callBackForlandingPage()
-{
-    if (!(window.location.href.indexOf("index.html") > -1))
-    {
-        window.location.href= "../../pages/index.html";
-    }
-    
-}
