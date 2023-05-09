@@ -1,21 +1,23 @@
 
-import { menuBarFunction } from './functions.js';
+import { menuBarFunction, verifyPasswords, testData } from './functions.js';
 
 const buttonStyle = document.querySelector(".botao-estilo");
 const displayMenu = document.querySelector(".cabecario-links");
 const submitDetect = document.querySelector(".queryForm");
 
 
+
 if (submitDetect) {
     submitDetect.addEventListener("submit", (event) => {
         event.preventDefault();
+        const passwordInput = document.querySelector(".queryPassword");
+        const confirmPassword = document.querySelector(".queryConfirm");
         const dataCollect = document.querySelectorAll(".getInput");
-        for (let inputs of dataCollect) {
-            console.log(`Os dados a seguir ${inputs.value}`);
+        if (passwordInput && confirmPassword) {
+            (verifyPasswords(passwordInput, confirmPassword)) ? testData(dataCollect) : '';
         }
     });
 }
-
 
 buttonStyle.addEventListener('click', () => {
     menuBarFunction(displayMenu);

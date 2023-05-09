@@ -350,12 +350,7 @@ footer.rodape ul.lista-rodape li.lista-conteudo a.nome-conteudo:hover {
 .cadastro .containerDiv {
   height: 100px;
 }
-.cadastro label {
-  display: flex;
-  align-items: center;
-  font-size: 2rem;
-}
-.cadastro .inputBar {
+.cadastro .containerDiv .inputBar {
   width: 450px;
   height: 40px;
   border: none;
@@ -364,11 +359,20 @@ footer.rodape ul.lista-rodape li.lista-conteudo a.nome-conteudo:hover {
   font-size: 24px;
   color: white;
 }
-.cadastro .inputBar:active, .cadastro .inputBar:focus {
+.cadastro .containerDiv .inputBar:active, .cadastro .containerDiv .inputBar:focus {
   background-color: none;
   border: none;
   border-bottom: 2px solid rgb(255, 255, 255);
   outline: none;
+}
+.cadastro .containerDiv #submitWrongPassword {
+  border: none;
+  border-bottom: 2px solid red;
+}
+.cadastro label {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
 }
 .cadastro .submitInput {
   width: 150px;
@@ -392,7 +396,7 @@ footer.rodape ul.lista-rodape li.lista-conteudo a.nome-conteudo:hover {
   .cadastro {
     min-width: 450px;
   }
-  .cadastro .inputBar {
+  .cadastro .containerDiv .inputBar {
     width: 300px;
   }
 }
@@ -400,7 +404,7 @@ footer.rodape ul.lista-rodape li.lista-conteudo a.nome-conteudo:hover {
   .cadastro {
     min-width: 300px;
   }
-  .cadastro .inputBar {
+  .cadastro .containerDiv .inputBar {
     width: 200px;
   }
 }/*# sourceMappingURL=style.css.map */

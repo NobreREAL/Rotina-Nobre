@@ -15,28 +15,34 @@
     }
     .containerDiv{
         height:100px;
+
+        .inputBar{
+            width:450px;
+            height: 40px;
+            border:none;
+            border-bottom:2px solid rgb(255, 255, 255);
+            background-color:transparent;
+            font-size:24px;
+            color:white;
+    
+            &:active, &:focus{
+                background-color: none;
+                border:none;
+                border-bottom:2px solid rgb(255, 255, 255);
+                outline: none;
+            }
+        }
+
+        #submitWrongPassword {
+            border:none;
+            border-bottom:2px solid red;
+        }
     }
 
     label{
         display:flex;
         align-items: center;
         font-size:2rem;
-    }
-    .inputBar{
-        width:450px;
-        height: 40px;
-        border:none;
-        border-bottom:2px solid rgb(255, 255, 255);
-        background-color:transparent;
-        font-size:24px;
-        color:white;
-
-        &:active, &:focus{
-            background-color: none;
-            border:none;
-            border-bottom:2px solid rgb(255, 255, 255);
-            outline: none;
-        }
     }
 
     .submitInput{
@@ -62,9 +68,10 @@
 @media screen and (max-width:705px) {
     .cadastro{
         min-width:450px;
-
-        .inputBar{
-            width:300px;
+        .containerDiv{
+            .inputBar{
+                width:300px;
+            }
         }
     }
 }
@@ -72,9 +79,10 @@
 @media screen and (max-width:500px) {
     .cadastro{
         min-width:300px;
-
-        .inputBar{
-            width:200px;
+        .containerDiv{
+            .inputBar{
+                width:200px;
+            }
         }
     }
 }
