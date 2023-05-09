@@ -1,17 +1,24 @@
 
-import { menuBarFunction, callBackForlandingPage } from './functions.js';
+import { menuBarFunction } from './functions.js';
 
-const botaoControle = document.querySelector(".botao-estilo");
+const buttonStyle = document.querySelector(".botao-estilo");
 const displayMenu = document.querySelector(".cabecario-links");
-const logoImg = document.querySelector(".logo");
+const submitDetect = document.querySelector(".queryForm");
 
 
-botaoControle.addEventListener('click', () => {
+if (submitDetect) {
+    submitDetect.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const dataCollect = document.querySelectorAll(".getInput");
+        for (let inputs of dataCollect) {
+            console.log(`Os dados a seguir ${inputs.value}`);
+        }
+    });
+}
+
+
+buttonStyle.addEventListener('click', () => {
     menuBarFunction(displayMenu);
-})
-
-logoImg.addEventListener('click', () => {
-    callBackForlandingPage();
 })
 
 window.addEventListener('resize', () => {
@@ -20,4 +27,6 @@ window.addEventListener('resize', () => {
         displayMenu.style.display = "flex";
     }
 })
+
+
 

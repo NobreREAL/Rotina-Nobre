@@ -13,8 +13,10 @@
 <body>
     <div class="all">
         <header class="cabecario-site">
-            <h1 class="logo">Rotina Nobre <img src="../styles/main/imgs/logo.png"
-                    alt="Logo LN referente as iniciais do criador" class="imagem-logo"></h1>
+            <a href="index.html">
+                <h1 class="logo">Rotina Nobre <img src="../styles/main/imgs/logo.png"
+                        alt="Logo LN referente as iniciais do criador" class="imagem-logo"></h1>
+            </a>
             <button class="botao-estilo">-</button>
         </header>
         <nav class="cabecario-links">
@@ -33,25 +35,25 @@
     </div>
 
     <main class="conteudo-principal">
-        <form action="" class="cadastro">
+        <form action="" class="cadastro queryForm">
             <h1 id="conteudo-titulo">Cadastrar conta</h1>
             <div class="containerDiv">
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" class="inputBar" autocomplete="off" maxlength="15" required>
+                <input type="text" name="nome" id="nome" class="inputBar getInput" autocomplete="off" maxlength="15" required>
             </div>
             <div class="containerDiv">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" class="inputBar" autocomplete="off" maxlength="24" required>
+                <input type="email" name="email" id="email" class="inputBar getInput" autocomplete="off" maxlength="24" required>
             </div>
             <div class="containerDiv">
                 <label for="senha">Senha</label>
-                <input type="password" name="senha" id="senha" class="inputBar" required>
+                <input type="password" name="senha" id="senha" class="inputBar getInput" required>
             </div>
             <div class="containerDiv">
                 <label for="confirmSenha">Confirma Senha</label>
-                <input type="password" name="confirmSenha" id="confirmSenha" class="inputBar" required>
+                <input type="password" name="confirmSenha" id="confirmSenha" class="inputBar getInput" required>
             </div>
-            <input type="submit" value="Cadastrar" class="submitInput">
+            <input type="submit" value="Cadastrar" class="submitInput submitQuery">
         </form>
 
     </main>

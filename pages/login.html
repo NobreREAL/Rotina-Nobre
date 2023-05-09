@@ -11,7 +11,10 @@
 <body>
     <div class="all">
         <header class="cabecario-site">
-            <h1 class="logo">Rotina Nobre <img src="../styles/main/imgs/logo.png" alt="Logo LN referente as iniciais do criador" class="imagem-logo"></h1>
+            <a href="index.html">
+                <h1 class="logo">Rotina Nobre <img src="../styles/main/imgs/logo.png"
+                        alt="Logo LN referente as iniciais do criador" class="imagem-logo"></h1>
+            </a>
             <button class="botao-estilo">-</button>
         </header>
         <nav class="cabecario-links">
@@ -30,17 +33,17 @@
     </div>
 
     <main class="conteudo-principal">
-        <form action="" class="formulario">
+        <form action="" class="formulario queryForm">
             <h2 class="login">Login</h2>
             <div class="container-form">
                 <label for="username" class="label-input"><img src="../styles/main/ico/username.png" alt="logo-username">Usuário</label>
-                <input type="text" name="username" id="username" class="textbox" autocomplete="off" maxlength="15" required>
+                <input type="text" name="username" id="username" class="textbox getInput" autocomplete="off" maxlength="15" required>
             </div>
             <div class="container-form">
                 <label for="password" class="label-input"><img src="../styles/main/ico/password.png" alt="logo-password">Senha</label>
-                <input type="password" name="password" id="password" class="textbox" required>
+                <input type="password" name="password" id="password" class="textbox getInput" required>
             </div>
-            <input type="submit" value="Login" class="submit">
+            <input type="submit" value="Login" class="submit submitQuery">
         </form>
     </main>
     <script type="module" src="../scripts/index/main.js"></script>

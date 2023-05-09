@@ -39,6 +39,10 @@ div.all header.cabecario-site {
   display: flex;
   align-items: center;
 }
+div.all header.cabecario-site a {
+  text-decoration: none;
+  color: white;
+}
 div.all header.cabecario-site h1.logo {
   margin-left: 0.5rem;
   font-family: "Roboto Slab";
@@ -321,9 +325,6 @@ footer.rodape ul.lista-rodape li.lista-conteudo a.nome-conteudo:hover {
   color: rgb(72, 167, 255);
   transition: border-radius 0.5s ease-in-out, color 0.5s ease-in-out;
 }
-.formulario .submit:active {
-  color: red;
-}
 
 @media screen and (max-width: 450px) {
   .formulario {
@@ -334,7 +335,7 @@ footer.rodape ul.lista-rodape li.lista-conteudo a.nome-conteudo:hover {
   }
 }
 .cadastro {
-  width: 50%;
+  min-width: 700px;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.536);
   display: flex;
@@ -342,6 +343,9 @@ footer.rodape ul.lista-rodape li.lista-conteudo a.nome-conteudo:hover {
   justify-content: center;
   align-items: center;
   color: white;
+}
+.cadastro h1 {
+  padding-bottom: 25px;
 }
 .cadastro .containerDiv {
   height: 100px;
@@ -382,4 +386,21 @@ footer.rodape ul.lista-rodape li.lista-conteudo a.nome-conteudo:hover {
   border-radius: 1rem;
   color: rgb(72, 167, 255);
   transition: border-radius 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 705px) {
+  .cadastro {
+    min-width: 450px;
+  }
+  .cadastro .inputBar {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cadastro {
+    min-width: 300px;
+  }
+  .cadastro .inputBar {
+    width: 200px;
+  }
 }/*# sourceMappingURL=style.css.map */
