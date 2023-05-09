@@ -357,7 +357,7 @@ footer.rodape ul.lista-rodape li.lista-conteudo a.nome-conteudo:hover {
   border: none;
   border-bottom: 2px solid rgb(255, 255, 255);
   background-color: transparent;
-  font-size: 24rem;
+  font-size: 24px;
   color: white;
 }
 .cadastro .inputBar:active, .cadastro .inputBar:focus {
