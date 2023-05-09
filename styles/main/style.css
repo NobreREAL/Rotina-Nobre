@@ -342,16 +342,14 @@ footer.rodape ul.lista-rodape li.lista-conteudo a.nome-conteudo:hover {
   justify-content: center;
   align-items: center;
   color: white;
-  gap: 2rem;
+  gap: 1rem;
 }
-.cadastro #conteudo-titulo {
-  position: absolute;
-  top: 100px;
+.cadastro .containerDiv {
+  height: 125px;
 }
 .cadastro label {
   display: flex;
   align-items: center;
-  gap: 1rem;
   font-size: 2rem;
 }
 .cadastro .inputBar {
@@ -378,8 +376,8 @@ footer.rodape ul.lista-rodape li.lista-conteudo a.nome-conteudo:hover {
   font-weight: 600;
   font-size: 16px;
   background-color: transparent;
-  cursor: pointer;
   transition: border-radius 0.5s ease-in-out, color 0.5s ease-in-out;
+  cursor: pointer;
 }
 .cadastro .submitInput:hover {
   border-radius: 1rem;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,12 @@
     <link rel="stylesheet" href="../styles/main/style.css">
     <link rel="shortcut icon" type="image/png" href="../styles/index/ico/favicon.png">
 </head>
+
 <body>
     <div class="all">
         <header class="cabecario-site">
-            <h1 class="logo">Rotina Nobre <img src="../styles/main/imgs/logo.png" alt="Logo LN referente as iniciais do criador" class="imagem-logo"></h1>
+            <h1 class="logo">Rotina Nobre <img src="../styles/main/imgs/logo.png"
+                    alt="Logo LN referente as iniciais do criador" class="imagem-logo"></h1>
             <button class="botao-estilo">-</button>
         </header>
         <nav class="cabecario-links">
@@ -32,18 +35,27 @@
     <main class="conteudo-principal">
         <form action="" class="cadastro">
             <h1 id="conteudo-titulo">Cadastrar conta</h1>
-            <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" class="inputBar" autocomplete="off" maxlength="15" required>            
-            <label for="email">Email</label>
+            <div class="containerDiv">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" class="inputBar" autocomplete="off" maxlength="15" required>
+            </div>
+            <div class="containerDiv">
+                <label for="email">Email</label>
                 <input type="email" name="email" id="email" class="inputBar" autocomplete="off" maxlength="24" required>
-            <label for="senha">Senha</label>
-                <input type="password" name="senha" id="senha" class="inputBar" required>            
-            <label for="confirmSenha">Confirma Senha</label>
+            </div>
+            <div class="containerDiv">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" class="inputBar" required>
+            </div>
+            <div class="containerDiv">
+                <label for="confirmSenha">Confirma Senha</label>
                 <input type="password" name="confirmSenha" id="confirmSenha" class="inputBar" required>
-                <input type="submit" value="Cadastrar" class="submitInput">
+            </div>
+            <input type="submit" value="Cadastrar" class="submitInput">
         </form>
- 
+
     </main>
     <script type="module" src="../scripts/index/main.js"></script>
 </body>
+
 </html>
