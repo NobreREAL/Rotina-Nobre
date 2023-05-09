@@ -342,10 +342,9 @@ footer.rodape ul.lista-rodape li.lista-conteudo a.nome-conteudo:hover {
   justify-content: center;
   align-items: center;
   color: white;
-  gap: 1rem;
 }
 .cadastro .containerDiv {
-  height: 125px;
+  height: 100px;
 }
 .cadastro label {
   display: flex;
