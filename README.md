@@ -8,7 +8,7 @@ Atualmente, LandingPage está sendo aprimorada em seus design e futuramente, ter
 
 <ol>
 <li> Criar a LandingPage ✅ </li>
-<li> Desenvolver aplicação: Janela de cadastro ❌ </li>
+<li> Desenvolver aplicação: Janela de cadastro ✅ </li>
 <li> Desenvolver aplicação: Janela de criação de atividades ❌ </li>
 <li> Desenvolver aplicação: Janela de Relatório ❌ </li>
 </ol>
