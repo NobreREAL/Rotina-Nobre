@@ -1,3 +1,5 @@
+const formGetter = document.querySelector("form") || "";
+
 export function menuBarFunction(menuResponsivo) {
     if (menuResponsivo.style.display == "none") {
         menuResponsivo.style.display = "flex";
@@ -38,52 +40,61 @@ function getInput(form) {
 
 export function formRegister(input) // 4 args 'login, email, senha, confirmasenha' 
 {
-    /*const isValid = verifyPasswords(input);
+    const isValid = verifyPasswords(input.senha, input.confirmSenha);
 
     if (!isValid) {
-        error(1);
+        return false;
     } else {
-        console.log(login, email, password, confirmPassword);
+
     }
-    */
-    console.log(input);
+
 };
 
 export function formLogin(input) {
-    for (let values in input) {
-        console.log(input[values]);
-    }
 
-    console.log(input);
 };
 
-
 export function verifyPasswords(passcode, passcode2) {
-    if (passcode.value !== passcode2.value) {
-        passcode.setAttribute("id", "submitWrongPassword");
-        passcode2.setAttribute("id", "submitWrongPassword");
+    if (passcode !== passcode2) {
+        modalError(typeError(1), formGetter);
         return false;
     }
     
     else {
-        passcode.removeAttribute("id");
-        passcode2.removeAttribute("id");
+        alert("Senha válida!");
         return true;
     };
 }
 
-export function testData(dataUsed) {
-    for (let data of dataUsed) {
-        console.log(data.value);
-    };
+function findModalOnHTML() {
+    const modalCreated = document.querySelector(".modalMessage");
+
+    return modalCreated ? modalCreated : false;
 }
 
-
-function error(typeOfError) {
-    if (typeOfError === 1) {
-        return "Senhas não batem";
-    } else if (typeOfError === 2) {
-
+function modalError(errorMessage = "TestMessage", tag) {
+    
+    if (tag && !findModalOnHTML()) {
+    const exitButton = document.createElement("button");
+    exitButton.innerText = 'x';
+    exitButton.setAttribute("class", "modalClosure");
+    const divError = document.createElement("div");
+    const textError = document.createTextNode(errorMessage);
+    divError.appendChild(textError);
+    divError.appendChild(exitButton);
+    divError.setAttribute("class", "modalMessage");
+   
+    exitButton.addEventListener("click", (event) => {
+        event.preventDefault();
+        divError.remove();
+    }); 
+    tag.appendChild(divError);
+    findModalOnHTML(tag);
+    } else {
+        console.log("Nada.");
     }
+}
 
+export function typeError(arg) {
+    if (arg === 1) return "Senhas não são iguais!";
 }

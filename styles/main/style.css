@@ -392,12 +392,62 @@ footer.rodape ul.lista-rodape li.lista-conteudo a.nome-conteudo:hover {
   transition: border-radius 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
+.modalMessage {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:500px;
+  height:400px;
+  position:absolute;
+  transform:translate(-50%, -50%);
+  top:50%;
+  left:50%;
+  margin:auto;
+  background-color: rgb(255, 255, 255);
+  border-radius:15px;
+  box-shadow:5px 5px 10px rgba(0, 0, 0, 0.303);
+  color:black;
+  font-weight:600;
+  font-size:32px;
+}
+
+.modalClosure{
+  width:50px;
+  height:50px;
+  font-size:32px;
+  font-weight:600;
+  border:none;
+  background-color:rgb(125, 125, 125);
+  color:white;
+  position:absolute;
+  transform:translate(-50%, -50%);
+  top: 6%;
+  left:95%;
+  border-radius:0 1rem 0 0;
+}
+
+.modalClosure:hover{
+  background-color:rgb(77, 77, 77);
+}
+
 @media screen and (max-width: 705px) {
   .cadastro {
     min-width: 450px;
   }
   .cadastro .containerDiv .inputBar {
     width: 300px;
+  }
+
+  .modalMessage{
+    width:250px;
+    height:200px;
+    font-size:22px;
+  }
+
+  .modalClosure{
+    width:25px;
+    height:25px;
+    font-size:12px;
   }
 }
 @media screen and (max-width: 500px) {
