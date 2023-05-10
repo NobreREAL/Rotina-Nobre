@@ -1,10 +1,19 @@
 
-import { menuBarFunction, verifyPasswords, testData } from './functions.js';
+import { verifyPasswords, testData } from './functions.js';
+import {userAccount} from "./clients-database.js";
 
-const buttonStyle = document.querySelector(".botao-estilo");
-const displayMenu = document.querySelector(".cabecario-links");
-const submitDetect = document.querySelector(".queryForm");
 
+
+const dataCollect = {
+    username:document.querySelector("#nome").value ? document.querySelector("#nome").value : "",
+    password:document.querySelector("#senha").value ? document.querySelector("#senha").value : "",
+    email:document.querySelector("#email").value ? document.querySelector("#email").value : "" 
+}
+
+
+const clientOperation = new userAccount(dataCollect.username, dataCollect.email, dataCollect.password);
+
+clientOperation.registerUser(clientOperation.login, clientOperation._password, clientOperation.email);
 
 
 if (submitDetect) {
@@ -18,17 +27,3 @@ if (submitDetect) {
         }
     });
 }
-
-buttonStyle.addEventListener('click', () => {
-    menuBarFunction(displayMenu);
-})
-
-window.addEventListener('resize', () => {
-    if (window.innerWidth > 500 && displayMenu.style.display == "none")
-    {
-        displayMenu.style.display = "flex";
-    }
-})
-
-
-

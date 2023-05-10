@@ -34,19 +34,19 @@
     </div>
 
     <main class="conteudo-principal">
-        <form action="" class="formulario queryForm">
+        <form action="" class="formulario queryForm" id="formLogin">
             <h2 class="login">Login</h2>
             <div class="container-form">
-                <label for="username" class="label-input"><img src="../styles/main/ico/username.png" alt="logo-username">Usuário</label>
-                <input type="text" name="username" id="username" class="textbox getInput" autocomplete="off" maxlength="15" required>
+                <label for="nome" class="label-input"><img src="../styles/main/ico/username.png" alt="logo-username">Usuário</label>
+                <input type="text" name="nome" id="nome" class="textbox getInput login" autocomplete="off" maxlength="12" required>
             </div>
             <div class="container-form">
-                <label for="password" class="label-input"><img src="../styles/main/ico/password.png" alt="logo-password">Senha</label>
-                <input type="password" name="password" id="password" class="textbox getInput" required>
+                <label for="senha" class="label-input"><img src="../styles/main/ico/password.png" alt="logo-password">Senha</label>
+                <input type="password" name="senha" id="senha" class="textbox getInput senha" maxlength="15" required>
             </div>
             <input type="submit" value="Login" class="submit submitQuery">
         </form>
     </main>
-    <script type="module" src="../scripts/index/main.js"></script>
+    <script type="module" src="../scripts/index/login.js"></script>
 </body>
 </html>

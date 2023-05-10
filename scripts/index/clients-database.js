@@ -1,22 +1,13 @@
-import mysql from 'mysql';
+export class userAccount {
+    login;
+    email;
+    _password;
 
-const con = mysql.createConnection({
-    host: "localhost",
-    user : "root",
-    password: ""
-});
-
-con.connect(function(err) {
-    if (err) throw err;
-    console.log("Connected!");
-})
-
-export function signingUp(verifyConnection ,...args) {
-
-    if (verifyConnection) {
-        for (let data of args) {
-            
+    registerUser(login, email, password) {
+        if (login && email && password) {
+            return `INSERT INTO tbUsuarios (Username, Passcode, Email) VALUES (${login}, ${password}, ${email})`;
+        } else {
+            console.log("Sharky é gay");
         }
     }
-}
-
+};

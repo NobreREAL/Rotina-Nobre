@@ -36,29 +36,29 @@
     </div>
 
     <main class="conteudo-principal">
-        <form action="" class="cadastro queryForm">
+        <form action="" class="cadastro queryForm" id="formRegister">
             <h1 id="conteudo-titulo">Cadastrar conta</h1>
             <div class="containerDiv">
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" class="inputBar getInput" autocomplete="off" maxlength="15" required>
+                <input type="text" name="nome" id="nome" class="inputBar getInput login" autocomplete="off" maxlength="12" required>
             </div>
             <div class="containerDiv">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" class="inputBar getInput" autocomplete="off" maxlength="24" required>
+                <input type="email" name="email" id="email" class="inputBar getInput email" autocomplete="off" maxlength="30" required>
             </div>
             <div class="containerDiv">
                 <label for="senha">Senha</label>
-                <input type="password" name="senha" id="senha" class="inputBar getInput queryPassword" required>
+                <input type="password" name="senha" id="senha" class="inputBar getInput queryPassword senha" maxlength="15" required>
             </div>
             <div class="containerDiv">
                 <label for="confirmSenha">Confirma Senha</label>
-                <input type="password" name="confirmSenha" id="confirmSenha" class="inputBar getInput queryConfirm" required>
+                <input type="password" name="confirmSenha" id="confirmSenha" class="inputBar getInput queryConfirm" maxlength="15" required>
             </div>
             <input type="submit" value="Cadastrar" class="submitInput submitQuery">
         </form>
 
     </main>
-    <script type="module" src="../scripts/index/main.js"></script>
+    <script type="module" src="../scripts/index/register.js"></script>
 </body>
 
 </html>
