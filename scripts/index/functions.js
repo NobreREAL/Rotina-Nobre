@@ -1,4 +1,5 @@
-const formGetter = document.querySelector("form") || "";
+import mysql from 'mysql'; 
+export const formGetter = document.querySelector("form") || "";
 
 export function menuBarFunction(menuResponsivo) {
     if (menuResponsivo.style.display == "none") {
@@ -45,7 +46,7 @@ export function formRegister(input) // 4 args 'login, email, senha, confirmasenh
     if (!isValid) {
         return false;
     } else {
-
+        registerOnDB(input.nome, input.email, input.senha)
     }
 
 };
@@ -61,7 +62,6 @@ export function verifyPasswords(passcode, passcode2) {
     }
     
     else {
-        alert("Senha válida!");
         return true;
     };
 }
@@ -72,7 +72,7 @@ function findModalOnHTML() {
     return modalCreated ? modalCreated : false;
 }
 
-function modalError(errorMessage = "TestMessage", tag) {
+export function modalError(errorMessage = "TestMessage", tag) {
     
     if (tag && !findModalOnHTML()) {
     const exitButton = document.createElement("button");
@@ -95,6 +95,49 @@ function modalError(errorMessage = "TestMessage", tag) {
     }
 }
 
-export function typeError(arg) {
+function typeError(arg) {
     if (arg === 1) return "Senhas não são iguais!";
+    else if (arg === 2) return "Usuário já está cadastro no sistema!";
 }
+
+function connectDatabase() {
+    const con = mysql.createConnection({
+    host: "localhost",
+    user : "root",
+    password: "",
+    database: "dbWebpage"
+});
+    con.connect();
+}
+
+function insertInto(nome, email, senha) {
+    if (nome && email && senha) {
+        return `INSERT INTO tbUsers (nome,email,senha) VALUES (?, ?, ?)`;
+    }
+};
+
+function selectAll() {
+    return "SELECT * FROM tbUsers";
+}
+
+export function registerOnDB(nome, email, senha, ) {
+    connectDatabase();
+    const sql = insertInto(nome, email, senha);
+
+    con.query(sql, [nome, email, senha], function (err, results, fields) {
+        if (err) modalError(2, formGetter);
+    })
+}
+
+function selectValues() {
+    const sql = selectAll();
+
+    con.query(sql , function (err, results, fields) {
+        if (err) throw err;
+        for (let colunas of results) {
+            for (let linhas of Object.values(colunas)) {
+                console.log(linhas);
+            }
+        }
+    }
+)};
